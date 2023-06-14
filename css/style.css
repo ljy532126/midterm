@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.init-content{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 3px solid #3d7bd8;
+    transform: translate(-50%,-50%);
+}
