@@ -12,7 +12,18 @@
         <h1>贪吃蛇</h1>
         <!-- 游戏开始阶段页面 -->
         <div class="init-content">
-            <h2>游戏设置</h2>
+            <h4>游戏设置</h4>
+            <div class="input-content">
+                <label for="">障碍个数</label>
+                <input id="obstacle-num" type="number" placeholder="请输入1-10的数字" min="1" max="10">
+            </div>
+            <div class="input-content">
+                <label for="">移动速度</label>
+                <input id="man" type="radio" name="speed" value="500"><label for="man">慢</label>
+                <input id="zhong" type="radio" name="speed" value="300" checked><label for="zhong">中</label>
+                <input id="kuai" type="radio" name="speed" value="150"><label for="kuai">快</label>
+            </div>
+            <button id="start-game-btn">开始游戏</button>
         </div>
     </div>
 </body>

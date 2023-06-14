@@ -3,12 +3,55 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: rebeccapurple;
+}
 .init-content{
     position: fixed;
     top: 50%;
     left: 50%;
     padding: 15px;
     border-radius: 5px;
-    border: 3px solid #3d7bd8;
+    text-align: center;
+    background: rgba(255, 255, 255, .5);
+    /* border: 3px solid #3d7bd8; */
     transform: translate(-50%,-50%);
+}
+label{
+    cursor: pointer;
+    margin-left: 5px;
+}
+label::after{
+    content: ":"
+}
+.input-content{
+    margin: 5px;
+}
+input[type="number"]{
+    outline: none;
+    border-style: none;
+}
+#start-game-btn{
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 5px;
+    transition: background 0.5s ease-in-out;
+    background: linear-gradient(to right, #41b9ff, #2b8eff);
+}
+#start-game-btn:hover{
+    box-shadow: 1px 1px 1px #ccc;
+    background: linear-gradient(to right, #e03960, #dc4125);
+}
+#start-game-btn:active{
+    box-shadow: 1px 1px 1px #ccc;
+    background: linear-gradient(to right, #cc3457, #c53a22);
+}
+#obstacle-num{
+    padding: 5px;
+    width: 135px;
+    border-radius: 5px;
+    border: 1px solid #358ef5da;
 }
